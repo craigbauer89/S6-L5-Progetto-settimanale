@@ -1,0 +1,72 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variable';
+@import 'mixin';
+
+body {
+    background-color: white;
+    @include darkMode {
+        background-color: black;
+        color: white;
+      }
+}
+
+.carousel-inner {
+    height: 400px;
+}
+
+// .banner {
+//     border: 1px solid black;
+//     text-align: center;
+//     padding: 10%;
+//     background-image: url(../img/chicago.jpg) no-repeat fixed 0;
+//     background-size: cover;
+
+
+// }
+
+.banner_margin{
+    margin-bottom: 10%;
+}
+    
+
+.banner1 {
+    background: url(../img/chicago.jpg) no-repeat fixed 0;
+    background-size: cover;
+    @include  center;
+    padding: 10%;
+    
+}
+
+.banner_inner {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.info {
+    @include  center;
+    margin-bottom: 10%;
+}
+
+.partners {
+    @include  center;
+    margin-bottom: 10%;
+
+    h1{
+        margin-bottom: 10%;
+    }
+
+    img{
+        width:200px;
+        height:100px;
+    }
+}
+.carousel {
+    img {
+        
+        height:300px;
+    }
+}
+
