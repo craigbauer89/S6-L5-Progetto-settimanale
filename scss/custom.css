@@ -11972,6 +11972,10 @@ body {
   height: 400px;
 }
 
+h1, .h1 {
+  color: #3f3c3f;
+}
+
 .banner_margin {
   margin-bottom: 10%;
 }
@@ -12031,10 +12035,11 @@ body {
   margin-right: 0 100px;
 }
 
-.carousel-caption figure, .carousel-caption h5, .carousel-caption .h5, .carousel-caption p {
+.carousel-caption h5, .carousel-caption .h5, .carousel-caption p {
   width: 80%;
   margin: 1% 10%;
-  color: #737eff;
+  font-family: "Courier New", Courier, monospace;
+  color: #11085e;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

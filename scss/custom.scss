@@ -1,6 +1,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'variable';
+@import 'variables';
 @import 'mixin';
+@import 'funzioni';
 
 body {
     background-color: white;
@@ -12,6 +13,7 @@ body {
 
 .carousel-inner {
     height: 400px;
+    
 }
 
 // .banner {
@@ -23,6 +25,10 @@ body {
 
 
 // }
+
+h1 {
+    color: $Fourthcolor;
+}
 
 .banner_margin{
     margin-bottom: 10%;
@@ -105,10 +111,11 @@ body {
         margin-right: 0 100px;
      }
 
-    figure, h5, p {
+    h5, p {
         width: 80%;
         margin:1% 10%;
-        color: $blue +$indigo;
+        
+        @include text_verdana_blue;
         align-self: center;
     }
     padding: 10%;
