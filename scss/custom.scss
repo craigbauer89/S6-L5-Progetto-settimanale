@@ -51,6 +51,8 @@ body {
 }
 
 .partners {
+
+
     
     @include  center;
     margin-bottom: 10%;
@@ -73,23 +75,54 @@ body {
 .logos {
     @include darkMode {
         background-color: white;
+        border-radius: 0;
         
       }
 }
 
 
 .carousel {
-    img {
-        margin: 1% 41%;
+    height: 400px;
+    
+    
+    
+    // img {
+    //     margin: 1% 41%;
+    //     border: 1PX solid black;
+    //     height:100px;
         
-        height:200px;
-        
-    }
+    // }
+
+
 }
+
+.carousel-caption {
+    
+    
+  
+    img{
+        width: 100px;
+        margin-right: 0 100px;
+     }
+
+    figure, h5, p {
+        width: 80%;
+        margin:1% 10%;
+        color: $blue +$indigo;
+        align-self: center;
+    }
+    padding: 10%;
+    height: 100%;
+   
+
+}
+
 
 .carousel-item {
   
-    height: 350px;
+    height: 100%;
+    
+    
     @include darkMode {
         background-color: white;
         color: black;
@@ -97,6 +130,8 @@ body {
       }
 
 }
+
+
 
 .nav-link {
 
@@ -109,6 +144,17 @@ body {
 }
 
 .navbar {
+
+   i {
+       color: black;
+
+       @include darkMode {
+        
+        color: white;
+        
+      }
+
+   }
 
     margin-top: 0;
     a {
@@ -133,3 +179,39 @@ body {
         
       }
     }
+
+
+@media screen and (max-width: 800px) {
+
+    .logos {
+        @include darkMode {
+
+        border-radius: 15%;
+        }
+    }
+}
+
+.reveal{
+    
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+      
+.reveal.active{
+        
+    opacity: 100%;
+    background-color: transparent;
+    transform: translateY(0px);
+        
+} 
+
+.info {
+
+    i {
+        font-size: 100px;
+
+    }
+
+}
