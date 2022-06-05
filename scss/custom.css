@@ -12010,7 +12010,59 @@ body {
   height: 100px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .logos {
+    background-color: white;
+  }
+}
+
 .carousel img {
-  height: 300px;
+  margin: 1% 41%;
+  height: 200px;
+}
+
+.carousel-item {
+  height: 350px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .carousel-item {
+    background-color: white;
+    color: black;
+  }
+}
+
+.nav-link {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-link {
+    color: white;
+  }
+}
+
+.navbar {
+  margin-top: 0;
+}
+
+.navbar a {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar a {
+    color: white;
+  }
+}
+
+.container {
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: black;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
