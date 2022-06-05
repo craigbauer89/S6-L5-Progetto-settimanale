@@ -12103,11 +12103,11 @@ body {
 
 .reveal {
   position: relative;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
   opacity: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 .reveal.active {

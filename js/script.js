@@ -1,7 +1,3 @@
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
 
   window.addEventListener('scroll', reveal);
 
@@ -13,6 +9,7 @@ function topFunction() {
       var windowheight = window.innerHeight;
       var revealtop = reveals[i].getBoundingClientRect().top;
       var revealpoint = 150;
+      
 
       if(revealtop < windowheight - revealpoint){
         reveals[i].classList.add('active');
@@ -22,3 +19,5 @@ function topFunction() {
       }
     }
   }
+
+  
