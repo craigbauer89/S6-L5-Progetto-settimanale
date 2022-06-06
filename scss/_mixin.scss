@@ -11,11 +11,13 @@ $darkMode: true;
   }
 
 
-  @mixin center {
+  @mixin center_margin {
     text-align: center;
+    margin-bottom: 10%;
 }
 
 @mixin text_verdana_blue{
     font-family: $font-text;
         color: $ThirdColor;
 }
+
