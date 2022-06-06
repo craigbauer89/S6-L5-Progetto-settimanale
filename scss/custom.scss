@@ -16,16 +16,6 @@ body {
     
 }
 
-// .banner {
-//     border: 1px solid black;
-//     text-align: center;
-//     padding: 10%;
-//     background-image: url(../img/chicago.jpg) no-repeat fixed 0;
-//     background-size: cover;
-
-
-// }
-
 h1 {
     color: $Fourthcolor;
 }
@@ -53,53 +43,33 @@ h1 {
 
 .info {
     @include  center;
-    margin-bottom: 10%;
+    
 }
 
 .partners {
-
-
-    
     @include  center;
     margin-bottom: 10%;
 
     h1{
-        margin-bottom: 10%;
+        @include  center;
     }
 
     img{
         width:200px;
         height:100px;
     }
-
-    // @include darkMode {
-        
-    //     color: black;
-    //   }
 }
 
 .logos {
     @include darkMode {
         background-color: white;
-        border-radius: 0;
-        
+
       }
 }
 
 
 .carousel {
     height: 400px;
-    
-    
-    
-    // img {
-    //     margin: 1% 41%;
-    //     border: 1PX solid black;
-    //     height:100px;
-        
-    // }
-
-
 }
 
 .carousel-caption {
@@ -114,7 +84,6 @@ h1 {
     h5, p {
         width: 80%;
         margin:1% 10%;
-        
         @include text_verdana_blue;
         align-self: center;
     }
@@ -129,7 +98,6 @@ h1 {
   
     height: 100%;
     
-    
     @include darkMode {
         background-color: white;
         color: black;
@@ -139,49 +107,31 @@ h1 {
 }
 
 
-
 .nav-link {
 
     color: black;
     @include darkMode {
-        
         color: white;
         
       }
 }
 
 .navbar {
+    margin-top: 0;
 
    i {
-       color: black;
-
-       @include darkMode {
-        
-        color: white;
-        
+       @extend .nav-link;
       }
-
-   }
-
-    margin-top: 0;
+    
     a {
-
-    color: black;
-
-    @include darkMode {
-        
-        color: white;
-        
-      }
+        @extend .nav-link;
     }
 }
 
 .container {
     background-color: white;
     
-
     @include darkMode {
-        
         background-color: black;
         
       }
@@ -218,7 +168,6 @@ h1 {
 
     i {
         font-size: 100px;
-
     }
 
 }
